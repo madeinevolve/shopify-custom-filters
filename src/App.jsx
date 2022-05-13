@@ -1,7 +1,9 @@
-function App() {
-  console.log("pippo pippo");
+import { ContextProvider } from "./utils/ContextProvider";
 
-  return <div className="App"></div>;
+export default function App() {
+  return (
+    <ContextProvider>
+      <p></p>
+    </ContextProvider>
+  );
 }
-
-export default App;
