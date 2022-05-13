@@ -10,17 +10,16 @@ export const ContextProvider = ({ children }) => {
 
   function checkParams() {
     let user = searchParams.get("user");
-
-    return user;
+    return setFilters(user);
   }
 
   useEffect(() => {
     checkParams();
-    console.log(checkParams());
+    console.log(filters)
   }, []);
 
   return (
-    <Context.Provider value={[session, setSession]}>
+    <Context.Provider value={[filters, setFilters]}>
       {children}
     </Context.Provider>
   );
