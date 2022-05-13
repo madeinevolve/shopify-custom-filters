@@ -1,6 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-
 export const Context = createContext();
 
 export const ContextProvider = ({ children }) => {

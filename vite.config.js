@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/main.jsx"),
       name: "filters",
-      fileName: (format) => `filters.js`,
+      fileName: () => `filters.js`,
     },
   },
 });

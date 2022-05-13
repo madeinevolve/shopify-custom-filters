@@ -1,9 +1,8 @@
 import { ContextProvider } from "./utils/ContextProvider";
 
 export default function App() {
+  console.log('pippooooooo')
   return (
-    <ContextProvider>
-      <p></p>
-    </ContextProvider>
+      <p>pippo</p>
   );
 }
