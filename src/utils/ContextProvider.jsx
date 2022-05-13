@@ -6,11 +6,11 @@ export const Context = createContext();
 export const ContextProvider = ({ children }) => {
   const [filters, setFilters] = useState();
 
-  let [searchParams, setSearchParams] = useSearchParams();
+  //let [searchParams, setSearchParams] = useSearchParams();
 
   function checkParams() {
-    let user = searchParams.get("user");
-    return setFilters(user);
+    //let user = searchParams.get("user");
+    return setFilters('Paperino');
   }
 
   useEffect(() => {
